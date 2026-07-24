@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch — email and social links.">
+  <title>Contact | Wray</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">Wray</a>
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <h1 class="page-title">Contact</h1>
+      <p class="lead">The best way to reach me for opportunities, collaboration, or questions.</p>
+
+      <!-- EDIT: Contact details — also update EDITING.md and footer links on other pages -->
+      <ul class="contact-list">
+        <li>
+          <strong>Email</strong><br>
+          <a href="mailto:kanaanwray@gmail.com">kanaanwray@gmail.com</a>
+        </li>
+        <li>
+          <strong>GitHub</strong><br>
+          <a href="https://github.com/BoyIIMan" rel="noopener noreferrer" target="_blank">github.com/BoyIIMan</a>
+        </li>
+        <li>
+          <strong>LinkedIn</strong><br>
+          <a href="https://www.linkedin.com/in/kanaan-wray-a2bbb0235/" rel="noopener noreferrer" target="_blank">linkedin.com/in/kanaan-wray-a2bbb0235</a>
+        </li>
+        <li>
+          <strong>Resume</strong><br>
+          <a href="resume.html">View online</a> ·
+          <a href="assets/files/resume.pdf" download>Download PDF</a>
+        </li>
+      </ul>
+
+      <!-- EDIT: Optional — add phone, location, Calendly, etc. as new <li> items above -->
+      <section class="section">
+        <h2 class="section-title">Note</h2>
+        <p>
+          This site is static — no contact form backend. Email or LinkedIn work best.
+          To change these links site-wide, see <code>EDITING.md</code> in the project folder.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <!-- EDIT: Site-wide footer links — see EDITING.md -->
+      <nav class="footer-links" aria-label="Footer">
+        <a href="https://github.com/BoyIIMan" rel="noopener noreferrer" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/kanaan-wray-a2bbb0235/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+        <a href="mailto:kanaanwray@gmail.com">Email</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="copyright">© <span id="year"></span> Wray. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

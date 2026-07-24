@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wray — cloud engineering, security, automation, and infrastructure.">
+  <title>Wray | Cloud & Infrastructure</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">Wray</a>
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <section class="hero">
+        <p class="hero-label">Cloud · Security · Automation</p>
+        <h1>Wray</h1>
+        <p class="tagline">
+          I design and operate reliable systems in the cloud—connecting infrastructure,
+          automation, and security into work that ships and stays maintainable. Curious about
+          how things work under the hood; focused on building tools and practices teams can
+          actually use.
+        </p>
+
+        <div class="focus-block">
+          <h2 class="focus-heading">Current focus</h2>
+          <ul class="focus-list">
+            <li>Cloud Engineering</li>
+            <li>Security</li>
+            <li>Automation</li>
+            <li>Infrastructure</li>
+          </ul>
+        </div>
+
+        <!-- EDIT: Hero action links — match values in EDITING.md -->
+        <div class="hero-actions" aria-label="Links">
+          <a href="https://github.com/BoyIIMan" class="btn btn-outline" rel="noopener noreferrer" target="_blank">GitHub</a>
+          <a href="https://www.linkedin.com/in/kanaan-wray-a2bbb0235/" class="btn btn-outline" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+          <a href="resume.html" class="btn btn-outline">Resume</a>
+          <a href="projects.html" class="btn">Projects</a>
+          <a href="blog.html" class="btn btn-outline">Blog</a>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="featured-heading">
+        <div class="section-header">
+          <h2 id="featured-heading" class="section-title">Featured projects</h2>
+          <a href="projects.html" class="section-link">View all →</a>
+        </div>
+
+        <!-- EDIT: Featured projects — duplicate a card or link to projects.html; see projects/_project-card-snippet.html -->
+        <div class="card-grid card-grid--projects">
+          <article class="card">
+            <h3>Azure Zero Trust Lab</h3>
+            <p>
+              Hands-on environment for Zero Trust patterns—identity, Conditional Access,
+              segmentation, and secure access to workloads in Azure.
+            </p>
+            <p class="card-meta">Azure · Entra ID · Zero Trust</p>
+            <a href="projects.html">Details →</a>
+          </article>
+
+          <article class="card">
+            <h3>Terraform Infrastructure Lab</h3>
+            <p>
+              Infrastructure-as-code modules and sample environments for provisioning and
+              iterating on cloud resources with consistent, reviewable changes.
+            </p>
+            <p class="card-meta">Terraform · Azure · CI/CD</p>
+            <a href="projects.html">Details →</a>
+          </article>
+
+          <article class="card">
+            <h3>FIRE Planning App</h3>
+            <p>
+              Personal finance planner for financial-independence goals—track assumptions,
+              run scenarios, and see how savings rate affects the timeline.
+            </p>
+            <p class="card-meta">HTML · CSS · JavaScript</p>
+            <a href="projects.html">Details →</a>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <!-- EDIT: Site-wide footer links — see EDITING.md -->
+      <nav class="footer-links" aria-label="Footer">
+        <a href="https://github.com/BoyIIMan" rel="noopener noreferrer" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/kanaan-wray-a2bbb0235/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+        <a href="mailto:kanaanwray@gmail.com">Email</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="copyright">© <span id="year"></span> Wray. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

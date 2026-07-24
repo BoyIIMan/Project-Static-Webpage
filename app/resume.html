@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Kanaan Wray — resume: cloud, endpoint management, identity, and security experience.">
+  <title>Resume | Wray</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">Wray</a>
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html" class="active">Resume</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <!-- EDIT: Resume header — name, location, contact -->
+      <header class="resume-header">
+        <h1 class="page-title">Kanaan Wray</h1>
+        <p class="resume-contact lead">
+          Austin, TX ·
+          <a href="mailto:kanaanwray@gmail.com">kanaanwray@gmail.com</a> ·
+          <a href="https://www.linkedin.com/in/kanaan-wray-a2bbb0235/" rel="noopener noreferrer" target="_blank">LinkedIn</a> ·
+          <a href="https://github.com/BoyIIMan" rel="noopener noreferrer" target="_blank">GitHub</a>
+        </p>
+        <p class="resume-download">
+          <a href="assets/files/resume.pdf" class="btn" download>Download PDF</a>
+        </p>
+      </header>
+
+      <!-- EDIT: Resume sections — update text when your PDF changes -->
+      <div class="resume-body prose">
+        <section class="resume-section">
+          <h2>Technical skills</h2>
+          <ul>
+            <li><strong>Cloud platforms:</strong> Azure (VMs, Storage, Azure Monitor, IAM), Entra ID, AWS EC2 (basic), Microsoft 365 admin</li>
+            <li><strong>Endpoint management:</strong> Microsoft Intune, Windows Autopilot, compliance policies, configuration profiles, app packaging and deployment, Jamf, Google Workspace Admin</li>
+            <li><strong>Infrastructure:</strong> Windows Server, Active Directory, Group Policy, WSUS, VMware vSphere / ESXi, DNS, DHCP, VPN, Azure virtual networks</li>
+            <li><strong>Identity &amp; access:</strong> Okta, SAML / SSO, MFA policy management, RBAC, least-privilege enforcement, identity lifecycle management, Zero Trust, Conditional Access</li>
+            <li><strong>Security &amp; compliance:</strong> Microsoft Defender, Nessus, Veeam Backup, SOC 2 aligned endpoint hardening, vulnerability management</li>
+            <li><strong>Automation:</strong> PowerShell (identity provisioning, access control, system configuration), Python (basic), Docker (basic), Terraform (basic)</li>
+            <li><strong>Monitoring:</strong> Azure Monitor, Log Analytics, Datadog</li>
+          </ul>
+        </section>
+
+        <section class="resume-section">
+          <h2>Professional experience</h2>
+
+          <article class="resume-role">
+            <h3>IT Support Engineer II (Endpoint &amp; IAM Engineering) · TheZebra</h3>
+            <p class="resume-dates">September 2025 – April 2026</p>
+            <ul>
+              <li>Built Intune endpoint management from the ground up, transforming a loosely enforced environment into a standardized, secure system with defined compliance baselines across 300+ endpoints.</li>
+              <li>Led enterprise migration of 300+ endpoints from Windows 10 to Windows 11 through staged deployment rings, compatibility testing, and phased rollout with minimal user disruption.</li>
+              <li>Eliminated standing local administrator access across 300+ endpoints by implementing RBAC and privileged access workflows, reducing attack surface and aligning with security best practices.</li>
+              <li>Packaged and deployed enterprise applications via Intune, replacing ad hoc installs with standardized, auditable software distribution.</li>
+              <li>Administered Okta, Entra ID, and Google Workspace for identity lifecycle management, SSO, and access control; enforced SOC 2-aligned identity and device security controls.</li>
+              <li>Automated routine tasks using PowerShell: group access provisioning, mailbox modifications, printer SMTP deployment, and policy automation.</li>
+            </ul>
+          </article>
+
+          <article class="resume-role">
+            <h3>System Administrator · FirstDay Foundation</h3>
+            <p class="resume-dates">March 2024 – August 2025</p>
+            <ul>
+              <li>Administered hybrid Windows Server infrastructure supporting ~2,000 users across 180+ virtual machines in VMware vSphere environments spanning multiple data center sites.</li>
+              <li>Administered Windows Server environments including Active Directory, Group Policy, and WSUS patch management; performed routine hardening and vulnerability remediation using Defender and Nessus.</li>
+              <li>Monitored infrastructure health and built custom alerting dashboards in Azure Monitor and OPMAN, providing real-time visibility across hybrid on-prem and cloud environments.</li>
+              <li>Supported core infrastructure services including DNS, DHCP, and VPN, ensuring reliable network connectivity across hybrid on-prem/cloud environments.</li>
+              <li>Managed Entra ID (Azure AD) as core cloud identity platform, enforcing access policies, RBAC, and conditional access across hybrid environments.</li>
+              <li>Developed and maintained documentation for system configurations, operational procedures, and infrastructure topology.</li>
+            </ul>
+          </article>
+
+          <article class="resume-role">
+            <h3>IT Helpdesk Technician · MVM Inc</h3>
+            <p class="resume-dates">March 2022 – March 2024</p>
+            <ul>
+              <li>Supported launch of 4 remote sites and deployed 100+ endpoints (laptops, mobile devices, printers) with asset tracking and monitoring.</li>
+              <li>Provided 24×7 on-call support in rotating schedule; diagnosed and resolved system, network, and peripheral issues for remote and on-site users.</li>
+            </ul>
+          </article>
+
+          <article class="resume-role">
+            <h3>IT Help Desk Technician · QA Systems Inc</h3>
+            <p class="resume-dates">August – October 2022</p>
+            <p>Tier 1–2 remote support across 126 Austin ISD schools.</p>
+          </article>
+        </section>
+
+        <section class="resume-section">
+          <h2>Education &amp; certifications</h2>
+          <ul>
+            <li>Associate of Computer Science — Northeast Lakeview College, 2023</li>
+            <li>CompTIA Security+</li>
+            <li>Microsoft Azure Fundamentals (AZ-900)</li>
+            <li>Azure Administrator Associate (AZ-104)</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <!-- EDIT: Site-wide footer links — see EDITING.md -->
+      <nav class="footer-links" aria-label="Footer">
+        <a href="https://github.com/BoyIIMan" rel="noopener noreferrer" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/kanaan-wray-a2bbb0235/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+        <a href="mailto:kanaanwray@gmail.com">Email</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="copyright">© <span id="year"></span> Wray. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

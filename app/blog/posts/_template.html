@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- POST_DESCRIPTION: one-line summary for search engines -->
+  <meta name="description" content="POST_DESCRIPTION">
+  <!-- POST_TITLE -->
+  <title>POST_TITLE | Wray</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="../../index.html" class="logo">Wray</a>
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../resume.html">Resume</a></li>
+          <li><a href="../../projects.html">Projects</a></li>
+          <li><a href="../../blog.html" class="active">Blog</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <article class="container post">
+      <header class="post-header">
+        <a href="../../blog.html" class="post-back">← Blog</a>
+        <time class="post-date" datetime="YYYY-MM-DD">Month DD, YYYY</time>
+        <h1 class="post-title">POST_TITLE</h1>
+        <ul class="post-tags" aria-label="Tags">
+          <li>Tag one</li>
+          <li>Tag two</li>
+        </ul>
+      </header>
+
+      <div class="post-body prose">
+        <!-- Write post content below. Use <h2> for sections, <p> for paragraphs. -->
+        <p>Opening paragraph.</p>
+
+        <h2>Section heading</h2>
+        <p>More content.</p>
+      </div>
+
+      <footer class="post-footer">
+        <a href="../../blog.html" class="post-back">← Back to all posts</a>
+      </footer>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <!-- EDIT: Site-wide footer links — see EDITING.md -->
+      <nav class="footer-links" aria-label="Footer">
+        <a href="https://github.com/BoyIIMan" rel="noopener noreferrer" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/kanaan-wray-a2bbb0235/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+        <a href="mailto:kanaanwray@gmail.com">Email</a>
+        <a href="../../contact.html">Contact</a>
+      </nav>
+      <p class="copyright">© <span id="year"></span> Wray. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../../js/script.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Blog — notes on cloud, security, labs, and learning.">
+  <title>Blog | Wray</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">Wray</a>
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blog.html" class="active">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <h1 class="page-title">Blog</h1>
+      <p class="lead">
+        Notes on cloud, security, labs, and learning. Newest first below.
+      </p>
+
+      <!--
+        ADD BLOG POST (newest at top):
+        1. Copy blog/posts/_template.html → blog/posts/your-slug.html
+        2. Paste a new <li> below with date, tags, title link, excerpt
+        See blog/README.md and EDITING.md
+      -->
+      <ul class="post-list">
+        <li>
+          <div class="post-list-meta">
+            <time class="date" datetime="2026-05-12">May 12, 2026</time>
+            <ul class="post-tags post-tags--compact" aria-label="Tags">
+              <li>Azure</li>
+              <li>Zero Trust</li>
+              <li>Security</li>
+              <li>Lab</li>
+            </ul>
+          </div>
+          <h2 class="post-list-title">
+            <a href="blog/posts/azure-zero-trust-lab.html">Building My Azure Zero Trust Lab</a>
+          </h2>
+          <p class="post-excerpt">
+            Why I built a hands-on lab for identity, Conditional Access, and segmentation—and what
+            I'm learning by testing policies instead of only reading about them.
+          </p>
+        </li>
+
+        <li>
+          <div class="post-list-meta">
+            <time class="date" datetime="2026-04-28">April 28, 2026</time>
+            <ul class="post-tags post-tags--compact" aria-label="Tags">
+              <li>Cloud Security</li>
+              <li>Career</li>
+              <li>Learning</li>
+            </ul>
+          </div>
+          <h2 class="post-list-title">
+            <a href="blog/posts/cloud-security-transition.html">Why I'm Transitioning Into Cloud Security</a>
+          </h2>
+          <p class="post-excerpt">
+            Connecting infrastructure and automation work with identity, risk, and defense in
+            depth—and how I'm approaching the shift with labs and writing.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <!-- EDIT: Site-wide footer links — see EDITING.md -->
+      <nav class="footer-links" aria-label="Footer">
+        <a href="https://github.com/BoyIIMan" rel="noopener noreferrer" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/kanaan-wray-a2bbb0235/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+        <a href="mailto:kanaanwray@gmail.com">Email</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="copyright">© <span id="year"></span> Wray. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

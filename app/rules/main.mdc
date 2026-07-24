@@ -1,0 +1,161 @@
+# Personal Website Project Rules
+
+## Project Purpose
+
+This repository contains my personal portfolio website hosted on GitHub Pages.
+
+The purpose of this site is:
+
+* showcase projects
+* host a personal blog
+* centralize social/media links
+* document learning and experiments
+* act as a public technical portfolio
+
+The site should remain lightweight, fast, maintainable, and easy to understand.
+
+---
+
+# Core Philosophy
+
+Prefer:
+
+* simplicity
+* readability
+* maintainability
+* clean architecture
+* low dependency count
+* static hosting compatibility
+
+Avoid:
+
+* unnecessary abstraction
+* overengineering
+* excessive dependencies
+* backend services
+* unnecessary frameworks
+* premature optimization
+
+---
+
+# Technical Constraints
+
+Use:
+
+* HTML
+* CSS
+* minimal vanilla JavaScript
+
+Avoid unless explicitly requested:
+
+* React
+* Next.js
+* Node backends
+* databases
+* authentication systems
+* APIs
+* large UI frameworks
+
+The site should work by simply opening index.html locally.
+
+---
+
+# Design Direction
+
+The design should feel:
+
+* modern
+* minimal
+* technical
+* professional
+* personal
+* clean
+
+Preferred:
+
+* dark theme
+* responsive layouts
+* subtle styling
+* semantic HTML
+* accessible structure
+
+Avoid:
+
+* flashy animations
+* clutter
+* excessive gradients
+* overly corporate styling
+
+---
+
+# Site Structure
+
+Core pages:
+
+* Home
+* About
+* Projects
+* Blog
+* Contact
+
+Blog implementation:
+
+* static HTML posts
+* no CMS
+* no backend
+
+Projects page:
+
+* simple project cards
+* GitHub links
+* concise descriptions
+
+---
+
+# Coding Style
+
+Code should be:
+
+* beginner-readable
+* well commented where necessary
+* modular but simple
+* easy to extend later
+
+CSS should:
+
+* use reusable classes
+* avoid unnecessary nesting
+* stay organized and readable
+
+JavaScript should:
+
+* remain minimal
+* avoid unnecessary libraries
+* prioritize clarity
+
+---
+
+# Deployment
+
+The site is intended for:
+
+* GitHub Pages hosting
+
+Ensure:
+
+* relative paths work correctly
+* pages are static-host compatible
+* deployment remains simple
+
+---
+
+# AI Assistant Instructions
+
+When making suggestions:
+
+* prefer the simplest viable solution
+* explain major decisions briefly
+* do not introduce complexity without justification
+* optimize for long-term maintainability
+
+Do not transform this project into a large web application unless explicitly instructed.

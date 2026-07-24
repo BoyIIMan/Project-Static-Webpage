@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="About Kanaan Wray — cloud, endpoint management, identity, and security.">
+  <title>About | Wray</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">Wray</a>
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <div class="container">
+      <h1 class="page-title">About</h1>
+      <p class="lead">Kanaan Wray — IT engineer focused on cloud, endpoint management, identity, and security.</p>
+
+      <!-- EDIT: Bio — personalize tone and add new paragraphs -->
+      <div class="about-content prose">
+        <p>
+          I'm an IT engineer based in Austin, TX, with hands-on experience building and securing
+          enterprise environments—from Intune and IAM at scale to hybrid Windows Server and
+          VMware infrastructure. I care about reliable systems, clear documentation, and
+          automation that removes repetitive work.
+        </p>
+        <p>
+          Recent work includes standing up endpoint management for 300+ devices, leading a
+          Windows 11 migration, tightening privileged access, and administering Okta, Entra ID,
+          and Google Workspace with SOC 2-aligned controls. I'm moving deeper into cloud security
+          and Zero Trust, and I use this site to share labs, projects, and what I'm learning.
+        </p>
+        <p>
+          <a href="resume.html">View my resume</a> or
+          <a href="contact.html">get in touch</a>.
+        </p>
+      </div>
+
+      <!-- EDIT: Skills — add or remove <li> items -->
+      <section class="section">
+        <h2 class="section-title">Skills &amp; tools</h2>
+        <ul class="skill-list">
+          <li>Azure &amp; Entra ID</li>
+          <li>Microsoft Intune</li>
+          <li>Okta &amp; SSO</li>
+          <li>Windows Server &amp; AD</li>
+          <li>VMware vSphere</li>
+          <li>PowerShell</li>
+          <li>Terraform</li>
+          <li>Zero Trust</li>
+          <li>Python</li>
+        </ul>
+      </section>
+
+      <!-- EDIT: Interests — hobbies, learning goals, communities -->
+      <section class="section">
+        <h2 class="section-title">Interests</h2>
+        <p>
+          Cloud security labs, homelab infrastructure, automation, financial-independence planning tools,
+          and technical writing. See the <a href="blog.html">blog</a> and <a href="projects.html">projects</a> for more.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <!-- EDIT: Site-wide footer links — see EDITING.md -->
+      <nav class="footer-links" aria-label="Footer">
+        <a href="https://github.com/BoyIIMan" rel="noopener noreferrer" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/kanaan-wray-a2bbb0235/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+        <a href="mailto:kanaanwray@gmail.com">Email</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <p class="copyright">© <span id="year"></span> Wray. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>

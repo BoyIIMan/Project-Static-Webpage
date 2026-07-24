@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Notes on building a hands-on Azure Zero Trust lab for identity, access, and segmentation.">
+  <title>Building My Azure Zero Trust Lab | Wray</title>
+  <link rel="stylesheet" href="../../css/styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="../../index.html" class="logo">Wray</a>
+      <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="../../about.html">About</a></li>
+          <li><a href="../../resume.html">Resume</a></li>
+          <li><a href="../../projects.html">Projects</a></li>
+          <li><a href="../../blog.html" class="active">Blog</a></li>
+          <li><a href="../../contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <article class="container post">
+      <header class="post-header">
+        <a href="../../blog.html" class="post-back">← Blog</a>
+        <time class="post-date" datetime="2026-05-12">May 12, 2026</time>
+        <h1 class="post-title">Building My Azure Zero Trust Lab</h1>
+        <ul class="post-tags" aria-label="Tags">
+          <li>Azure</li>
+          <li>Zero Trust</li>
+          <li>Security</li>
+          <li>Lab</li>
+        </ul>
+      </header>
+
+      <div class="post-body prose">
+        <p>
+          I started a dedicated lab to practice Zero Trust in Azure—not as a checklist exercise,
+          but as a place to break things, observe outcomes, and document what actually holds up
+          under real constraints.
+        </p>
+
+        <h2>What the lab covers</h2>
+        <p>
+          The environment focuses on identity-first access: Conditional Access policies, MFA
+          enforcement, least-privilege roles, and network segmentation between a small set of
+          sample workloads. Terraform provisions the baseline; policy and access decisions stay
+          explicit so I can change one variable and see the blast radius.
+        </p>
+
+        <h2>Why a lab instead of slides</h2>
+        <p>
+          Security architecture makes more sense when you can test it. A lab forces tradeoffs:
+          legacy apps that cannot do modern auth, break-glass accounts, logging gaps, and the
+          operational cost of tightening a policy. Those lessons do not stick as well in theory
+          alone.
+        </p>
+
+        <h2>What’s next</h2>
+        <p>
+          I am wiring in more telemetry—sign-in risk, policy failures, and east-west traffic
+          patterns—so each change has evidence behind it. The repo linked from my
+          <a href="../../projects.html">projects page</a> will grow as the lab stabilizes.
+        </p>
+      </div>
+
+      <footer class="post-footer">
+        <a href="../../blog.html" class="post-back">← Back to all posts</a>
+      </footer>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <!-- EDIT: Site-wide footer links — see EDITING.md -->
+      <nav class="footer-links" aria-label="Footer">
+        <a href="https://github.com/BoyIIMan" rel="noopener noreferrer" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/kanaan-wray-a2bbb0235/" rel="noopener noreferrer" target="_blank">LinkedIn</a>
+        <a href="mailto:kanaanwray@gmail.com">Email</a>
+        <a href="../../contact.html">Contact</a>
+      </nav>
+      <p class="copyright">© <span id="year"></span> Wray. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../../js/script.js"></script>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
