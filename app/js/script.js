@@ -1,23 +1,11 @@
-/**
- * Minimal site scripts — mobile navigation toggle
- */
-(function () {
-  const toggle = document.querySelector(".nav-toggle");
-  const nav = document.querySelector(".site-nav");
+document.getElementById("year").textContent = new Date().getFullYear();
 
-  if (!toggle || !nav) return;
+document.querySelectorAll('a[href^="#"]').forEach(function (link) {
+  link.addEventListener("click", function (event) {
+    const target = document.querySelector(link.getAttribute("href"));
+    if (!target) return;
 
-  toggle.addEventListener("click", function () {
-    const expanded = toggle.getAttribute("aria-expanded") === "true";
-    toggle.setAttribute("aria-expanded", String(!expanded));
-    nav.classList.toggle("is-open", !expanded);
+    event.preventDefault();
+    target.scrollIntoView({ behavior: "smooth", block: "start" });
   });
-
-  // Close menu when a link is clicked (mobile)
-  nav.querySelectorAll("a").forEach(function (link) {
-    link.addEventListener("click", function () {
-      toggle.setAttribute("aria-expanded", "false");
-      nav.classList.remove("is-open");
-    });
-  });
-})();
+});
