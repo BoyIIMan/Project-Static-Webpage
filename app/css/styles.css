@@ -156,6 +156,17 @@ p {
   border-radius: 50%;
 }
 
+.social-links .resume-download {
+  width: auto;
+  padding: 0 1.15rem;
+  border-radius: 1.5rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
 .social-links svg {
   width: 1.25rem;
   height: 1.25rem;
@@ -228,27 +239,17 @@ p {
   color: var(--muted);
 }
 
-.text-link {
-  display: inline-block;
-  margin-top: 0.5rem;
+.about-copy {
+  max-width: 780px;
+  color: rgba(255, 255, 255, 0.82);
+  font-size: clamp(1.05rem, 2vw, 1.3rem);
 }
 
-.resume-block {
-  display: grid;
-  grid-template-columns: minmax(190px, 0.45fr) minmax(0, 1.55fr);
-  gap: clamp(2rem, 6vw, 5rem);
+.about-copy p:last-child {
+  margin-bottom: 0;
+  color: var(--muted);
 }
 
-.subsection-title {
-  margin: 0;
-  color: rgba(255, 255, 255, 0.88);
-  font-size: 0.76rem;
-  font-weight: 600;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-}
-
-.resume-block h3,
 .card h3,
 .post h3 {
   margin-bottom: 0.6rem;
@@ -256,42 +257,6 @@ p {
   font-weight: 500;
 }
 
-.skill-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.55rem;
-  margin: 1.2rem 0 0;
-  padding: 0;
-  list-style: none;
-}
-
-.skill-list li {
-  padding: 0.4rem 0.7rem;
-  border: 1px solid var(--line);
-  color: var(--muted);
-  font-size: 0.76rem;
-}
-
-.experience-list article {
-  padding: 0 0 2rem;
-  margin-bottom: 2rem;
-  border-bottom: 1px solid var(--line);
-}
-
-.experience-list .skill-list {
-  margin-top: 1.15rem;
-}
-
-.experience-list article:last-child {
-  margin-bottom: 0;
-}
-
-.experience-list h3 span {
-  color: var(--muted);
-  font-weight: 400;
-}
-
-.experience-list article > p:last-child,
 .card > p {
   color: var(--muted);
 }
@@ -304,18 +269,6 @@ p {
   font-size: 0.72rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-}
-
-.credentials {
-  margin-top: 3rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--line);
-  color: var(--muted);
-}
-
-.credentials > div p,
-.credentials p {
-  margin-bottom: 0.35rem;
 }
 
 .card-grid {
@@ -416,7 +369,6 @@ footer p {
     flex: 0 0 auto;
   }
 
-  .resume-block,
   .card-grid {
     grid-template-columns: 1fr;
   }
